@@ -1,0 +1,20 @@
+# Dependencies
+markdown:         redcarpet
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Jonathan (Jonny) Johannes 
+tagline:          Physics, food, and web development 
+url:              http://jonnyjohannes.com
+paginate:         10
+author:
+  name:           Jonathan (Jonny) Johannes 
+  url:            https://twitter.com/jonnyjohannes
+  email:          jonny@jonnyjohannes.com
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/jonnyjohannes
