@@ -88,7 +88,7 @@ a:after {
 	border-color: #313131;
 }
 
-.navbar-inverse .navbar-nav > .active > a {
+.navbar-inverse .navbar-nav > a:active {
 	background: #1278B9;
 }
 
@@ -154,7 +154,7 @@ a:after {
 	text-align: center;
 }
 
-.dark-grey h4 {
+.dark-grey h3 {
 	font-weight: 700;
 }
 
@@ -166,10 +166,16 @@ a:after {
 	text-align: center;
 }
 
-.light-grey h4 {
+.light-grey h3 {
 	font-weight: 700;
 }
 
+/* Works */
+#work img {
+        width: 80%;
+        padding: 10px;
+        margin-top: 50px;
+}
 
 /* Red Wrap */
 .red-wrap {
