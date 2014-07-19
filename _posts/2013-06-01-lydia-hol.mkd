@@ -1,0 +1,15 @@
+---
+layout: work
+title: Lydia Hol 
+thumb-url: https://lh4.googleusercontent.com/-7QsewLXHxJc/U8SY0puKrzI/AAAAAAAAAiM/qYfD8QotSRc/s500-no/lydia_hol_3.png
+permalink: projects/lydia-hol
+---
+
+I was responsible for the backend development for the website. I built the backend in ruby on rails with a simple CMS administrator interface so content could be easily added/edited.
+
+The main design was created by Melanie and I then adapted it to the website as a whole.
+
+I integrated bandcamp and tumblr into the website as one of the goals was to aggregate the different third party services Lydia uses.
+
+Client: Lydia Hol
+

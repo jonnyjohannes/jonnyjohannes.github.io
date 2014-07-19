@@ -42,14 +42,19 @@ title: Welcome
 <div id='work' class='dark-grey'>
   <div class='section container'>
     <h3>Things I've Worked On</h3>
-    {% include works.html %}
+    {% for work in site.posts %}
+      <div class='col-md-3'>
+        <a href='{{ work.url }}'>
+          <img src='{{ work.thumb-url }}' alt='{{ work.title }}'> 
+        </a>
+      </div>
+    {% endfor %}    
   </div><!-- container -->
 </div>
 
 <div id='blog' class='light-grey'>
   <div class='section container'>
-    <h3>Things I've Worked On</h3>
-    {% include works.html %}
-  </div><!-- container -->
+    <h3>Blog</h3>
+  </div>
 </div>
 

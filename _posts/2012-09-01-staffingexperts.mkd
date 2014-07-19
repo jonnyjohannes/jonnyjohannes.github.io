@@ -1,0 +1,11 @@
+---
+layout: work
+title: StaffingExperts
+thumb-url: https://lh5.googleusercontent.com/-DUzLBUBlV9w/UVENMeIb05I/AAAAAAAAAQ0/AFRzMQpOGQo/s500-no/staffingexperts_1.jpg 
+permalink: projects/staffingexperts
+---
+
+I built an analytics and metrics web application to track staff activity and performance.
+
+Client: Tony Kim 
+

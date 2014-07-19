@@ -1,0 +1,15 @@
+---
+layout: work
+title: Atom Chip Characterization 
+thumb-url: https://lh6.googleusercontent.com/-MF7exH0CI8w/UVENK_gOi4I/AAAAAAAAARA/cec6WbQGgsM/s500/atom_chip_characterization_1.jpg 
+permalink: projects/atom-chip-characterization
+---
+
+This was my undergraduate honours thesis project.
+
+I investigated the effect of stress on the electrical and physical characteristics on micron thick gold-on-glass and gold-on-silicon wires. I subjected the wires to high current densities and looked at the transient and long term effects this had on the wires.
+
+These wires were characterized with the hope of giving a clearer picture on how they behave under conditions in which they would be used to super cool clouds of atoms.
+
+Supervisors: Dr James Booth, Dr Kirk Madison
+

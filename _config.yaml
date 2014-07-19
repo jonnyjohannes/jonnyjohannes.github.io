@@ -1,9 +1,6 @@
 # Dependencies
 markdown:         redcarpet
 
-# Permalinks
-permalink:        pretty
-
 # Setup
 title:            Jonathan (Jonny) Johannes 
 tagline:          Physics, food, and web development 

@@ -1,0 +1,15 @@
+---
+layout: work
+title: Colossal Magnetoresistance 
+thumb-url: https://lh3.googleusercontent.com/-1Xdq9QSGeGw/UVENK-eR3bI/AAAAAAAAAQM/N5N9KCTsZOw/s500/colosal_magnetoresistance_1.jpg 
+permalink: projects/colossal-magnetoresistance
+---
+
+I investigated the effect of doping (systematic introduction of impurities) of magenites in colosal magnetoresistant materials.
+
+Colosal magnetoresistance is the property where a material's electrical resistance is effected by the presence of an external magnetic field. A similar technology is used in the hard disk readers: giant magnetoresistance (same idea, "colossal" effect is just more dramatic than "giant").
+
+The materials I synthesized and studied were: Sm0.35Sr0.65Mn1-xRuxO3
+
+Supervisors: Dr Kim Chow, Dr Jan Jung
+

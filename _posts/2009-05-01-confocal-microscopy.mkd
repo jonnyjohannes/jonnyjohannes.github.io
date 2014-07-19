@@ -1,0 +1,13 @@
+---
+layout: work
+title: Confocal Microscopy
+thumb-url: https://lh6.googleusercontent.com/-VARAeBpT8h8/UVENKyyGlCI/AAAAAAAAAQ4/Ha0uhGjbjZc/s500/confocal_microscopy_1.jpg
+permalink: projects/confocal-microscopy 
+---
+
+Selected from an undergraduate lecture of > 500 students, I investigated the advantages of using a confocal microscope through the case study of rat ventricle myocytes.
+
+I prepared the cell samples with immunofluorescent tags (fluorescent compounds tethered to antibodies) to selectively light up parts of the cell
+
+Supervisors: Dr Ellen Rosenberg
+

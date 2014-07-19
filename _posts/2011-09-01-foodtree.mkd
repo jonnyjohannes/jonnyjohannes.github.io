@@ -1,0 +1,13 @@
+---
+layout: work
+title: Foodtree
+thumb-url: https://lh3.googleusercontent.com/-j2bgscRV83c/UVENLW69mKI/AAAAAAAAAQY/Nm2vS4JEeT0/s500/foodtree_1.jpg 
+permalink: projects/foodtree
+---
+
+I was humbled and proud to have been the first employee of the Vancouver startup. I started off by doing anything and everything.
+
+I then moved into filling a more technical role: I was part of the development team we built the backend in ruby (rails and goliath). On my own, I worked on collecting data, metrics, and analytics on how the website/app was being used.
+
+Supervisors: Anthony Nicalo, Derek Shanahan
+
