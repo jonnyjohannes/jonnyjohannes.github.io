@@ -1,6 +1,7 @@
 ---
 layout: work
 title: Atom Chip Characterization 
+short-description: Physics
 thumb-url: https://lh6.googleusercontent.com/-MF7exH0CI8w/UVENK_gOi4I/AAAAAAAAARA/cec6WbQGgsM/s500/atom_chip_characterization_1.jpg 
 permalink: projects/atom-chip-characterization
 ---

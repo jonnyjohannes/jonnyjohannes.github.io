@@ -177,6 +177,10 @@ a:after {
         margin-top: 50px;
 }
 
+.work {
+  text-align: left;
+}
+
 /* Red Wrap */
 .red-wrap {
 	background: #1278B9;
@@ -196,9 +200,9 @@ a:after {
 /* Blue Wrap */
 
 .blue-wrap {
-	background: #3498db;
+	background: #1278B9;
 	padding-top: 35px;
-	padding-bottom: 35px;
+	padding-bottom: 15px;
 }
 
 .blue-wrap h4 {

@@ -1,6 +1,7 @@
 ---
 layout: work
 title: Lydia Hol 
+short-description: Website for a wonderful singer-songwriter
 thumb-url: https://lh4.googleusercontent.com/-7QsewLXHxJc/U8SY0puKrzI/AAAAAAAAAiM/qYfD8QotSRc/s500-no/lydia_hol_3.png
 permalink: projects/lydia-hol
 ---

@@ -1,6 +1,7 @@
 ---
 layout: work
 title: StaffingExperts
+short-description: PHP, MySQL, HTML5, CSS
 thumb-url: https://lh5.googleusercontent.com/-DUzLBUBlV9w/UVENMeIb05I/AAAAAAAAAQ0/AFRzMQpOGQo/s500-no/staffingexperts_1.jpg 
 permalink: projects/staffingexperts
 ---

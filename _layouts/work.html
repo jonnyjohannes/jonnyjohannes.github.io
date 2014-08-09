@@ -4,15 +4,29 @@
   {% include head.html %}
   <body>
     {% include navbar.html %}
-    <div class='span12'>
-      <div class='section container'>
-        {{ content }}
+    <div class="blue-wrap">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h4>{{ page.title }}</h4>
+            <p>{{ page.short-description }}</p>
+          </div>
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!--  bluewrap -->
 
-        {% include footer.html %}
-      </div>
-
+    <div class="light-grey">
+      <div class="section container">
+        <div class='col-md-6'>
+          <img src='{{ page.thumb-url }}' alt='{{ work.title }}'>
+        </div>
+        <div class='work col-md-6'>
+          {{ content }}
+        </div>
       </div>
     </div>
+
+    {% include footer.html %}
   </body>
 
 </html>

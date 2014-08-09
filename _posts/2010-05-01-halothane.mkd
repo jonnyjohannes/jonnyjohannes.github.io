@@ -1,6 +1,7 @@
 ---
 layout: work
 title: Halothane 
+short-description: Atomistic and molecular calculations 
 thumb-url: https://lh6.googleusercontent.com/-1fJeJ_VmULQ/UVENLR04OWI/AAAAAAAAAQ8/u5SEiHDt7eg/s500/halothane_1.jpg 
 permalink: projects/halothane
 ---
