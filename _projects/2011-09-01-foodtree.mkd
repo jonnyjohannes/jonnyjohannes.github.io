@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: project
 title: Foodtree
 short-description: Ruby on Rails 
 thumb-url: https://lh3.googleusercontent.com/-j2bgscRV83c/UVENLW69mKI/AAAAAAAAAQY/Nm2vS4JEeT0/s500/foodtree_1.jpg 

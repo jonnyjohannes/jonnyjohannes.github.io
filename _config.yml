@@ -4,3 +4,6 @@ email:            jonny@jonnyjohannes.com
 url:              https://jonnyjohannes.github.io
 meta_author:      Johannes Jonathan
 
+sass:
+  sass_dir: assets/stylesheets
+

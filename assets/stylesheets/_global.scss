@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  color: $primary;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, strong {
+  margin-top: 1em;
+  padding-top: 1em;
+  line-height: 1.25;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary;
+}
+
+.section {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+}
+

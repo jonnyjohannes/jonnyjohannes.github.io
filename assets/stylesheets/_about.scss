@@ -1,0 +1,21 @@
+#about {
+  grid-template-columns: 1fr;
+  line-height: 2em;
+  @media only screen and (min-width:$cut){
+    grid-template-columns: 1fr 2fr;
+  }
+
+  div {
+    padding: 10px 20px;
+    align-self: center;
+  }
+
+  & img {
+    max-width: 100%;
+  }
+
+  .loud {
+    font-size: 2em;
+  }
+}
+

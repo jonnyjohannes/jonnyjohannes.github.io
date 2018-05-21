@@ -1,0 +1,19 @@
+{
+  "name": "jonnyjohannes",
+  "version": "1.0.0",
+  "description": "JonnyJohannes",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnyjohannes/jonnyjohannes.github.io.git"
+  },
+  "author": "jonnyjohannes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonnyjohannes/jonnyjohannes.github.io/issues"
+  },
+  "homepage": "https://github.com/jonnyjohannes/jonnyjohannes.github.io#readme"
+}

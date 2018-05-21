@@ -1,0 +1,8 @@
+<section id='projects'>
+  {% for project in site.projects %}
+    {% if project.published == true %}
+      <p>{{ project.title }}</p>
+    {% endif %}
+  {% endfor %}
+</section>
+
