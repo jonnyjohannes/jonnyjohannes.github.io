@@ -1,0 +1,19 @@
+---
+layout: project
+title: AppColony
+thumb: appcolony.png
+permalink: projects/appcolony
+published: true
+---
+
+Software Developer
+
+Calgary, AB, Canada
+
+April 2014 - Present
+
+- back end development and design of production infrastructure and architecture for mobile and web clients
+- front end development of interactive web applications and user interfaces
+- agile development working and communicating closely with design and client-facing teams
+- technologies: unix, mac os, vim, tmux, zsh, postgresql, git, ruby, javascript (jquery, react), html, css, heroku, aws
+

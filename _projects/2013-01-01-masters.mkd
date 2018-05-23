@@ -1,0 +1,20 @@
+---
+layout: project
+title: University of Calgary, Institute for Quantum Science and Technology
+short-description: molsim
+thumb: marcus_curves_lowered_activation_energy.png 
+permalink: projects/masters
+published: true
+---
+
+M.Sc. Thesis, Dr Barry Sanders and Dr Dennis Salahub
+
+Calgary, AB, Canada
+
+January 2013 - January 2016
+
+- quantum _ab initio_ calculations of partial charge distribution for electron transfer moiety
+- classical molecular dynamics simulations of protein-water system
+- statistical analysis of simulation trajectories to compute electron transfer energy parameters
+- technologies: linux, westgrid (high performance computing), python, charmm, demon, namd, vmd, delphi
+

@@ -2,13 +2,20 @@
 layout: project
 title: Foodtree
 short-description: Ruby on Rails 
-thumb-url: https://lh3.googleusercontent.com/-j2bgscRV83c/UVENLW69mKI/AAAAAAAAAQY/Nm2vS4JEeT0/s500/foodtree_1.jpg 
+thumb: foodtree.jpg
 permalink: projects/foodtree
+published: true
 ---
 
-I was humbled and proud to have been the first employee of the Vancouver startup. I started off by doing anything and everything.
+Developer and Data Analyst
 
-I then moved into filling a more technical role: I was part of the development team we built the backend in ruby (rails and goliath). On my own, I worked on collecting data, metrics, and analytics on how the website/app was being used.
+Vancouver, BC, Canada
 
-Supervisors: Anthony Nicalo, Derek Shanahan
+July 2010 - March 2012
+
+
+- back end and api development for mobile and web applications 
+- front end development of web and ios applications
+- data analysis extracting user trends on mobile, web, and database usage 
+- technologies: ruby, rails, goliath, mysql, git, javascript (jquery), html, css, heroku, chef, aws
 

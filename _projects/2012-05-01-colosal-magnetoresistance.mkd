@@ -1,0 +1,20 @@
+---
+layout: project
+title: University of Alberta, Condensed Matter Physics
+short-description: cmr
+thumb: colosal_magnetoresistance_1.jpg
+permalink: projects/colosal-magnetoresistance
+published: true
+---
+
+Research Assistant, Dr Kim Chow and Dr Jan Jung
+
+Edmonton, AB, Canada
+
+September 2011 - May 2012
+
+- synthesize materials of ruthenium-doped manganites with colossal-magnetoresistance properties
+- measure the material's response to a varying magnetic field in a strong electromagnetic generator
+- data analysis determining critical temperature for phase change
+- technologies: linux, python
+

@@ -1,21 +1,20 @@
 ---
-layout: work
+layout: project
 title: Halothane 
 short-description: Atomistic and molecular calculations 
-thumb-url: https://lh6.googleusercontent.com/-1fJeJ_VmULQ/UVENLR04OWI/AAAAAAAAAQ8/u5SEiHDt7eg/s500/halothane_1.jpg 
+thumb: halothane_1.jpg 
 permalink: projects/halothane
+published: true
 ---
 
-I investigated the model that was being used at the time in simulations involving halothane.
-That model didn't take into account the cushiness of electrons in the molecule (it was non-polarizable), this led to overestimations in calculations.
+Research Assistant, Dr Sergei Noskov
 
-The solution I pursued was to develop a set of polarizable parameters to be used in a new potential function for halothane in simulations.
-This involved the Drude model to include the electron cushiness that was being left out before.
+Calgary, AB, Canada
 
-The data we targeted to validate our model was: solvation energies of halothane in water and methanol.
-The polarizable model was able to much better represent these quantities.
+May - August 2008 and 2009
 
-http://pubs.acs.org/doi/abs/10.1021/jp908339j
-
-Supervisors: Dr Sergei Noskov
+- quantum calculations for ground state energy and configuration of halothane (C<sub>2</sub>HBrClF<sub>3</sub>)
+- fitting and parametrization of halothane to classical potential functions
+- simulation of halothane with novel parameters in water and methanol for comparison with empirical data
+- technologies: linux, westgrid (high performance computing), python, charmm, gaussian
 

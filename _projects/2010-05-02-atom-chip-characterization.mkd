@@ -1,0 +1,20 @@
+---
+layout: project
+title: University of British Columbia, Quantum Degenerate Gases Lab
+short-description: Physics
+thumb: atom_chip_characterization_1.jpg
+permalink: projects/atom-chip-characterization
+published: true
+---
+
+B.Sc. Honours Thesis, Dr Kirk Madison and Dr Jim Booth
+
+Vancouver, BC, Canada
+
+September 2009 - May 2010
+
+-  engineer and machine hardware for peripheral electronics of laser-ablated gold micro wires
+-  measure mechanical and electrical response of micro wires as a function of current density
+-  matrix analysis of electron micrographs of wires
+-  technologies: unix, python, tektronix, matlab, mathematica
+

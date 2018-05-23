@@ -1,8 +1,19 @@
-<section id='projects'>
-  {% for project in site.projects %}
+<div class='section' id='projects'>
+  {% for project in site.projects reversed %}
     {% if project.published == true %}
-      <p>{{ project.title }}</p>
+      <div class='project'>
+        <div class='browser'><span></span><span></span><span></span></div>
+        <div class='content'>
+          <div class='description'>
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.content }}</p>
+          </div>
+          <div class='image'>
+            <img src={{'assets/images/' | append: project.thumb}}>
+          </div>
+        </div>
+      </div>
     {% endif %}
   {% endfor %}
-</section>
+</div>
 

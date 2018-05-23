@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: project
 title: Confocal Microscopy
 short-description: Biophysics
 thumb-url: https://lh6.googleusercontent.com/-VARAeBpT8h8/UVENKyyGlCI/AAAAAAAAAQ4/Ha0uhGjbjZc/s500/confocal_microscopy_1.jpg

@@ -1,4 +1,5 @@
 #about {
+  padding: 50px 0;
   grid-template-columns: 1fr;
   line-height: 2em;
   @media only screen and (min-width:$cut){
@@ -6,12 +7,15 @@
   }
 
   div {
-    padding: 10px 20px;
     align-self: center;
   }
 
-  & img {
+  img {
     max-width: 100%;
+  }
+
+  .profile {
+    margin: auto;
   }
 
   .loud {
