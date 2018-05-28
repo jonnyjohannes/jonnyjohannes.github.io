@@ -1,25 +1,21 @@
 #about {
-  padding: 50px 0;
-  grid-template-columns: 1fr;
-  line-height: 2em;
-  @media only screen and (min-width:$cut){
-    grid-template-columns: 1fr 2fr;
-  }
+  font-size: 1.5vw;
+  line-height: 3vw;;
+  position: absolute;
+  top: 100vh;
+  left: 50%;
+  right: 10%;
+  padding-bottom: 34vh;
 
-  div {
-    align-self: center;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  .profile {
-    margin: auto;
-  }
-
-  .loud {
-    font-size: 2em;
+  @media screen and (max-width:667px) {
+    font-size: 18px;
+    font-size: 4.8vw;
+    line-height: 9vw;;
+    padding: 10%;
+    background: #ffffff;
+    left: 0;
+    right: 0;
+    padding-bottom: 34vh;
   }
 }
 
