@@ -4,11 +4,9 @@
     position: fixed;
     top: 30%;
     left: 10%;
-    font-size: 112px;
     font-size: 6.9vw;
 
-    @media screen and (max-width:667px) {
-      font-size: 68px;
+    @media screen and (max-width:1000px) {
       font-size: 18vw;
     }
   }
