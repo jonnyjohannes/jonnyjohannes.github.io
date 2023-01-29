@@ -31,6 +31,7 @@ html {
   --nav-width: 100vw;
   --nav-position: absolute;
   --nav-margin: var(--header-height) 0;
+  --pass-by-width: 50%;
   --projects-section-flex: 100%;
 }
 
@@ -49,6 +50,7 @@ html {
     --nav-width: 100%;
     --nav-position: relative;
     --nav-margin: 0;
+    --pass-by-width: 25%;
     --projects-section-flex: 40%;
   }
 }
@@ -217,15 +219,12 @@ header#header {
 
 }
 
-#arana-naranja {
+.pass-by {
+  animation: pass-by 60s linear infinite;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50%;
-}
-
-.pass-by {
-  animation: pass-by 60s linear infinite;
+  width: var(--pass-by-width);
 }
 @keyframes pass-by {
   0% {
