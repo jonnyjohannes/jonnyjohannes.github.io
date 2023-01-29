@@ -19,6 +19,7 @@ html {
   --gray: #85888C;
 
   --body-flex-direction: column;
+  --body-font-size: 1em;
   --header-flex-direction: row;
   --header-width: 100vw;
   --header-height: 11vmax;
@@ -35,6 +36,7 @@ html {
 
 @media (min-width: 1000px) {
   :root {
+    --body-font-size: 2em;
     --body-flex-direction: row;
     --header-flex-direction: column;
     --header-width: 50vmax;
@@ -89,7 +91,7 @@ body {
   color: var(--black);
   font-family: 'Inter UI', sans-serif;
   margin: 0;
-  font-size: 1em;
+  font-size: var(--body-font-size);
   line-height: 2em;
 }
 
