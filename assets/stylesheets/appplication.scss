@@ -217,23 +217,28 @@ header#header {
 
 }
 
-.bounce-in-right {
-  animation: bounce-in-right 2s ease 1;
+#arana-naranja {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
 }
-@keyframes bounce-in-right {
+
+.pass-by {
+  animation: pass-by 60s linear infinite;
+}
+@keyframes pass-by {
   0% {
-    opacity: 0;
-    transform: translateX(500vw);
+    transform: translate(100vw, 200vw);
   }
-  60% {
-    opacity: 1;
-    transform: translateX(-10vw);
+  10% {
+    transform: translate(0, 0);
   }
-  80% {
-    transform: translateX(1vw);
+  12% {
+    transform: translate(0, 0);
   }
   100% {
-    transform: translateX(0);
+    transform: translate(-1000vw, -2000vw);
   }
 }
 
