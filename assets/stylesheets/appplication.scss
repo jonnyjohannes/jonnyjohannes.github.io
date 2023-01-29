@@ -14,39 +14,83 @@ html {
 }
 
 :root {
-  --white: #f9f9f9;
-  --black: #36383F;
+  --white: white;
+  --black: black;
   --gray: #85888C;
 
   --body-flex-direction: column;
   --header-flex-direction: row;
   --header-width: 100vw;
-  --header-height: 11vh;
+  --header-height: 11vmax;
   --header-justify-content: space-between;
   --header-position: fixed;
+  --header-hamb-display: flex;
+  --nav-max-height: 0;
+  --nav-height: calc(100vh - var(--header-height));
+  --nav-width: 100vw;
+  --nav-position: absolute;
+  --nav-margin: var(--header-height) 0;
+  --projects-section-flex: 100%;
 }
 
 @media (min-width: 1000px) {
   :root {
     --body-flex-direction: row;
     --header-flex-direction: column;
-    --header-width: 11vw;
+    --header-width: 50vmax;
     --header-height: 100vh;
     --header-justify-content: none;
     --header-position: relative;
+    --header-hamb-display: none;
+    --nav-max-height: none;
+    --nav-height: 100%;
+    --nav-width: 100%;
+    --nav-position: relative;
+    --nav-margin: 0;
+    --projects-section-flex: 40%;
+  }
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+#opus {
+  padding: 5vmin;
+  overflow: hidden scroll;
+  margin: var(--nav-margin);
+}
+
+#opus::-webkit-scrollbar {
+  display: none;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+
+  & > section {
+    flex: var(--projects-section-flex);
+  }
+
+  img {
+    width: 100%;
   }
 }
 
 body {
   display: flex;
   flex-direction: var(--body-flex-direction);
+  background-color: var(--white);
   color: var(--black);
   font-family: 'Inter UI', sans-serif;
   margin: 0;
-}
-
-ul {
-  list-style: none;
+  font-size: 1em;
+  line-height: 2em;
 }
 
 a {
@@ -55,29 +99,28 @@ a {
   font-weight: bold;
 }
 
-
-
-#header {
+header#header {
   display: flex;
+  flex-direction: var(--header-flex-direction);
+  background: var(--white);
   position: var(--header-position);
   justify-content: var(--header-justify-content);
-  flex-direction: var(--header-flex-direction);
   box-shadow: 1px 1px 3px 0px var(--gray);
   width: var(--header-width);
   height: var(--header-height);
-  background: var(--white);
-
-  ul {
-    display: flex;
-    flex-direction: column;
-  }
 
   .monogram {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3vmax;
+    font-size: 4vmax;
     padding: 2vmax;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
   }
 
   nav {
@@ -87,6 +130,17 @@ a {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+  }
+
+  .nav {
+    position: var(--nav-position);
+    width: var(--nav-width);
+    height: var(--nav-height);
+    margin: var(--nav-margin);
+    background: var(--white);
+    max-height: var(--nav-max-height);
   }
 
   .menu a {
@@ -94,16 +148,11 @@ a {
   }
 
   .menu a:hover {
-    background-color: var(--gray);
-  }
-
-  .nav {
-    max-height: 0;
-    transition: max-height .5s ease-out;
+    color: var(--gray);
   }
 
   .hamb{
-    display: flex;
+    display: var(--header-hamb-display);
     align-items: center;
     cursor: pointer;
     padding: 2vmax;
@@ -135,17 +184,21 @@ a {
 
   .side-menu {
       display: none;
-  } /* Hide checkbox */
+  }
+
   .side-menu:checked ~ nav{
       max-height: none;
   }
+
   .side-menu:checked ~ .hamb .hamb-line {
       background: transparent;
   }
+
   .side-menu:checked ~ .hamb .hamb-line::before {
       transform: rotate(-45deg);
       top:0;
   }
+
   .side-menu:checked ~ .hamb .hamb-line::after {
       transform: rotate(45deg);
       top:0;
@@ -156,45 +209,10 @@ a {
   }
 
   .menu li{
-      padding: 1vw;
+      padding: 5vmin;
       float: left;
   }
 
-  .nav {
-    position: absolute;
-    width: 100vw;
-    height: calc(100vh - var(--header-height));
-    margin-top: var(--header-height);
-    background: var(--white);
-  }
-  @media (min-width: 1000px) {
-
-      .nav{
-          max-height: none;
-          height: 100%;
-          width: 100%;
-          position: relative;
-          margin-top: 0;
-      }
-
-
-      .menu a:hover{
-          background-color: transparent;
-          color: var(--gray);
-      }
-
-      .hamb{
-          display: none;
-      }
-  }
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  font-size: 1vmax;
-  line-height: 2vmax;;
-  padding: 3vmax;
 }
 
 .bounce-in-right {
@@ -217,10 +235,3 @@ section {
   }
 }
 
-#opus {
-  overflow: hidden scroll;
-}
-
-#opus::-webkit-scrollbar {
-  display: none;
-}
