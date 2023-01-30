@@ -31,7 +31,6 @@ html {
   --nav-width: 100vw;
   --nav-position: absolute;
   --nav-margin: var(--header-height) 0;
-  --pass-by-width: 50%;
   --projects-section-flex: 100%;
 }
 
@@ -50,7 +49,6 @@ html {
     --nav-width: 100%;
     --nav-position: relative;
     --nav-margin: 0;
-    --pass-by-width: 25%;
     --projects-section-flex: 40%;
   }
 }
@@ -220,24 +218,30 @@ header#header {
 }
 
 .pass-by {
-  animation: pass-by 60s linear infinite;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: var(--pass-by-width);
+  animation: pass-by 30s linear infinite;
+  position: fixed;
+  bottom: 10;
+  left: 10;
+  height: 20vh;
 }
 @keyframes pass-by {
   0% {
-    transform: translate(100vw, 200vw);
+    transform: translate(-100vmax, 0);
+  }
+  6% {
+    transform: translate(30px, 0);
+  }
+  8% {
+    transform: translate(-10px, 0)
   }
   10% {
     transform: translate(0, 0);
   }
-  12% {
+  20% {
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-1000vw, -2000vw);
+    transform: translate(800vmax, 0);
   }
 }
 
