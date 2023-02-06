@@ -19,7 +19,6 @@ html {
   --gray: #85888C;
 
   --body-flex-direction: column;
-  --body-font-size: 1em;
   --header-flex-direction: row;
   --header-width: 100vw;
   --header-height: 11vmax;
@@ -36,20 +35,26 @@ html {
 
 @media (min-width: 1000px) {
   :root {
-    --body-font-size: 2em;
     --body-flex-direction: row;
     --header-flex-direction: column;
-    --header-width: 50vmax;
+    --header-width: 25vmax;
     --header-height: 100vh;
     --header-justify-content: none;
-    --header-position: relative;
+    --header-position: fixed;
     --header-hamb-display: none;
     --nav-max-height: none;
-    --nav-height: 100%;
-    --nav-width: 100%;
+    --nav-height: 100vw;
+    --nav-width: 20vw;
     --nav-position: relative;
-    --nav-margin: 0;
+    --nav-margin: 0 2vw;
     --projects-section-flex: 40%;
+  }
+
+  #opus {
+    padding: 5vmin;
+    overflow: hidden scroll;
+    margin-left: var(--header-width);
+    width: calc(100vw - var(--header-width));
   }
 }
 
@@ -63,7 +68,6 @@ html {
 #opus {
   padding: 5vmin;
   overflow: hidden scroll;
-  margin: var(--nav-margin);
 }
 
 #opus::-webkit-scrollbar {
@@ -91,7 +95,7 @@ body {
   color: var(--black);
   font-family: 'Inter UI', sans-serif;
   margin: 0;
-  font-size: var(--body-font-size);
+  font-size: 1em;
   line-height: 2em;
 }
 
