@@ -1,6 +1,3 @@
----
----
-
 @import url('https://rsms.me/inter/inter-ui.css');
 
 html {
@@ -47,7 +44,7 @@ html {
     --nav-width: 20vw;
     --nav-position: relative;
     --nav-margin: 0 2vw;
-    --projects-section-flex: 40%;
+    --projects-section-flex: 100%;
   }
 
   #opus {
@@ -78,14 +75,14 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 2vw;
+}
 
-  & > section {
-    flex: var(--projects-section-flex);
-  }
+.projects > section {
+  flex: var(--projects-section-flex);
+}
 
-  img {
-    width: 100%;
-  }
+.projects img {
+  width: 100%;
 }
 
 body {
@@ -114,120 +111,122 @@ header#header {
   box-shadow: 1px 1px 3px 0px var(--gray);
   width: var(--header-width);
   height: var(--header-height);
+}
 
-  .monogram {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4vmax;
-    padding: 2vmax;
-  }
+header#header .monogram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vmax;
+  padding: 2vmax;
+}
 
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-  }
+header#header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
 
-  nav {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .5s ease-out;
-  }
+header#header nav {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
 
-  .nav {
-    position: var(--nav-position);
-    width: var(--nav-width);
-    height: var(--nav-height);
-    margin: var(--nav-margin);
-    background: var(--white);
-    max-height: var(--nav-max-height);
-  }
+header#header .nav {
+  position: var(--nav-position);
+  width: var(--nav-width);
+  height: var(--nav-height);
+  margin: var(--nav-margin);
+  background: var(--white);
+  max-height: var(--nav-max-height);
+}
 
-  .menu a {
-    display: block;
-  }
+header#header .menu a {
+  display: block;
+}
 
-  .menu a:hover {
-    color: var(--gray);
-  }
+header#header .menu a:hover {
+  color: var(--gray);
+}
 
-  .hamb{
-    display: var(--header-hamb-display);
-    align-items: center;
-    cursor: pointer;
-    padding: 2vmax;
-  }
+header#header .hamb {
+  display: var(--header-hamb-display);
+  align-items: center;
+  cursor: pointer;
+  padding: 2vmax;
+}
 
-  .hamb-line {
-    display: block;
-    height: 4px;
-    position: relative;
-    width: 24px;
-  }
+header#header .hamb-line {
+  display: block;
+  height: 4px;
+  position: relative;
+  width: 24px;
+}
 
-  .hamb-line::before,
-  .hamb-line::after{
-      background: var(--black);
-      content: '';
-      display: block;
-      height: 100%;
-      position: absolute;
-      transition: all .2s ease-out;
-      width: 100%;
-  }
-  .hamb-line::before{
-      top: 5px;
-  }
-  .hamb-line::after{
-      top: -5px;
-  }
+header#header .hamb-line::before,
+header#header .hamb-line::after {
+  background: var(--black);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
 
-  .side-menu {
-      display: none;
-  }
+header#header .hamb-line::before {
+  top: 5px;
+}
 
-  .side-menu:checked ~ nav{
-      max-height: none;
-  }
+header#header .hamb-line::after {
+  top: -5px;
+}
 
-  .side-menu:checked ~ .hamb .hamb-line {
-      background: transparent;
-  }
+header#header .side-menu {
+  display: none;
+}
 
-  .side-menu:checked ~ .hamb .hamb-line::before {
-      transform: rotate(-45deg);
-      top:0;
-  }
+header#header .side-menu:checked ~ nav {
+  max-height: none;
+}
 
-  .side-menu:checked ~ .hamb .hamb-line::after {
-      transform: rotate(45deg);
-      top:0;
-  }
+header#header .side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
 
-  ul.menu {
-    padding: 0;
-  }
+header#header .side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
 
-  .menu li{
-      padding: 5vmin;
-      float: left;
-  }
+header#header .side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
 
+header#header ul.menu {
+  padding: 0;
+}
+
+header#header .menu li {
+  padding: 5vmin;
+  float: left;
 }
 
 .pass-by {
   animation: pass-by 30s linear infinite;
   position: fixed;
-  bottom: 10;
-  left: 10;
+  bottom: 10px;
+  left: 10px;
   height: 20vh;
 }
+
 @keyframes pass-by {
   0% {
     transform: translate(-100vmax, 0);
@@ -248,4 +247,3 @@ header#header {
     transform: translate(800vmax, 0);
   }
 }
-
