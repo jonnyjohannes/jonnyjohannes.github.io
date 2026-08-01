@@ -1,8 +1,8 @@
 ---
-layout: project
+layout: layouts/archive-item.njk
 title: Wedding Website 
 thumb-url: https://lh5.googleusercontent.com/-rZihlJFhcZI/UVENL9blJ3I/AAAAAAAAAQs/fjk0Lw06PEU/s500/wedding_website_1.jpg 
-permalink: projects/wedding-website
+permalink: /projects/wedding-website/
 ---
 
 Nepotism aside, when my sister was getting married she let me build her a website and RSVP app.

@@ -1,0 +1,14 @@
+---
+title: Archive
+layout: layouts/base.njk
+permalink: /archive/
+---
+<section class="listing">
+  <p class="eyebrow">ARCHIVE</p>
+  <h1>Archive</h1>
+  <ul class="entry-list">
+    {% for item in collections.archive | reverse %}
+      <li><a href="{{ item.url }}">{{ item.data.title }}</a>{% if item.data.shortDescription %}<span>{{ item.data.shortDescription }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>

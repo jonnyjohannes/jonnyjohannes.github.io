@@ -1,8 +1,8 @@
 ---
-layout: project
+layout: layouts/archive-item.njk
 title: Colossal Magnetoresistance 
 thumb-url: https://lh3.googleusercontent.com/-1Xdq9QSGeGw/UVENK-eR3bI/AAAAAAAAAQM/N5N9KCTsZOw/s500/colosal_magnetoresistance_1.jpg 
-permalink: projects/colossal-magnetoresistance
+permalink: /projects/colossal-magnetoresistance/
 ---
 
 I investigated the effect of doping (systematic introduction of impurities) of magenites in colosal magnetoresistant materials.

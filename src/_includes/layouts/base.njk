@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analyticsId }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.analyticsId }}');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ description or site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <link rel="shortcut icon" href="/assets/images/favicon.png">
+    <title>{{ title or site.title }}</title>
+    <link href="/assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    {% include "partials/header.njk" %}
+    <main id="projects">{{ content | safe }}</main>
+  </body>
+</html>

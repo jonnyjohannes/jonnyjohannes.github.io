@@ -1,9 +1,9 @@
 ---
-layout: project
+layout: layouts/archive-item.njk
 title: StaffingExperts Solutions Inc.
-short-description: PHP, MySQL, HTML5, CSS
+description: PHP, MySQL, HTML5, CSS
 thumb: staffingexperts.jpg
-permalink: projects/staffingexperts
+permalink: /projects/staffingexperts/
 published: true
 ---
 

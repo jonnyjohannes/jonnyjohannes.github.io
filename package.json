@@ -1,0 +1,34 @@
+{
+  "name": "jonnyjohannes.github.io",
+  "version": "1.0.0",
+  "description": "Jonny Johannes =======================",
+  "main": "index.js",
+  "scripts": {
+    "sync:j2": "node scripts/sync-j2-notes.js",
+    "refresh": "npm run sync:j2 && npm run build",
+    "validate:notes": "node scripts/validate-notes.js",
+    "build": "npm run validate:notes && eleventy",
+    "dev": "eleventy --serve",
+    "pull-notes": "npm run sync:j2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnyjohannes/jonnyjohannes.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jonnyjohannes/jonnyjohannes.github.io/issues"
+  },
+  "homepage": "https://github.com/jonnyjohannes/jonnyjohannes.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^15.0.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-wikilinks": "^1.4.0"
+  }
+}

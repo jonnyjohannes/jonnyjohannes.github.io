@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+<article class="note">
+  <p class="eyebrow"><a href="/notes/"><< NOTES</a></p>
+  {% if created_at or updated_at %}
+  <p class="note-meta">
+    {% if created_at %}<span>published <time datetime="{{ created_at }}">{{ created_at | formatTimestamp }}</time></span>{% endif %}
+    {% if updated_at and updated_at != created_at %}<span>modified <time datetime="{{ updated_at }}">{{ updated_at | formatTimestamp }}</time></span>{% endif %}
+  </p>
+  {% endif %}
+  {{ content | safe }}
+  {% set related = title | backlinks(collections.notes) %}
+  {% if related.length %}
+  <aside class="backlinks">
+    <h2>LINKED FROM</h2>
+    <ul>{% for item in related %}<li><a href="{{ item.url }}">{{ item.data.title }}</a></li>{% endfor %}</ul>
+  </aside>
+  {% endif %}
+</article>

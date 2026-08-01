@@ -1,9 +1,9 @@
 ---
-layout: project
+layout: layouts/archive-item.njk
 title: University of British Columbia, Quantum Degenerate Gases Lab
-short-description: Physics
+description: Physics
 thumb: atom_chip_characterization_1.jpg
-permalink: projects/atom-chip-characterization
+permalink: /projects/atom-chip-characterization/
 published: true
 ---
 

@@ -1,0 +1,13 @@
+---
+title: Notes
+layout: layouts/base.njk
+permalink: /notes/
+---
+<section class="listing">
+  <h1>Notes</h1>
+  <ul class="entry-list">
+    {% for note in collections.notes | sort(attribute="data.created_at") | reverse %}
+      <li><a href="{{ note.url }}">{{ note.data.title }}</a>{% if note.data.created_at %}<span>{{ note.data.created_at | formatTimestamp }}</span>{% endif %}{% if note.data.description %}<span>{{ note.data.description }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>

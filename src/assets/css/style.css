@@ -1,5 +1,11 @@
 @import url('https://rsms.me/inter/inter-ui.css');
 
+*, *::before, *::after { box-sizing: border-box; }
+
+:root { color-scheme: light dark; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
 html {
 	scroll-behavior: smooth;
 }
@@ -47,7 +53,7 @@ html {
     --projects-section-flex: 100%;
   }
 
-  #opus {
+  #projects {
     padding: 5vmin;
     overflow: hidden scroll;
     margin-left: var(--header-width);
@@ -62,12 +68,12 @@ html {
   height: 80vh;
 }
 
-#opus {
+#projects {
   padding: 5vmin;
   overflow: hidden scroll;
 }
 
-#opus::-webkit-scrollbar {
+#projects::-webkit-scrollbar {
   display: none;
 }
 
@@ -246,4 +252,33 @@ header#header .menu li {
   100% {
     transform: translate(800vmax, 0);
   }
+}
+
+
+.notes-promo {
+  margin: 12vmin 0 5vmin;
+  max-width: 42rem;
+}
+
+.notes-promo a, .eyebrow { letter-spacing: .08em; }
+
+.listing, .note, .archive-item {
+  max-width: 48rem;
+  margin-inline: auto;
+  padding-top: 8vmin;
+  text-align: left;
+}
+
+.listing h1, .note h1, .archive-item h1 { line-height: 1.2; }
+
+.entry-list { list-style: none; padding: 0; }
+.entry-list li { border-top: 1px solid var(--gray); padding: 1rem 0; }
+.entry-list a { display: block; }
+.entry-list span { display: block; color: var(--gray); font-size: .9em; }
+.date, .note-meta { color: var(--gray); }
+.note-meta { display: flex; flex-wrap: wrap; gap: 1rem; font-size: .9em; }
+.backlinks { border-top: 1px solid var(--gray); margin-top: 4rem; padding-top: 1rem; }
+
+@media (prefers-color-scheme: dark) {
+  :root { --white: #111; --black: #f5f5f5; --gray: #aaa; }
 }

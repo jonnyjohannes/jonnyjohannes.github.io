@@ -1,0 +1,19 @@
+{
+  "source": "j2",
+  "files": [
+    "hacking/dotfiles-reflections-2013-2025.md",
+    "mantras/ekadasamukha-dharani.md"
+  ],
+  "notes": [
+    {
+      "sourcePath": "hacking/dotfiles-reflections-2013-2025.md",
+      "title": "Dotfiles Repository Evolution Timeline (2013-2025)",
+      "permalink": "/notes/hacking/dotfiles-reflections-2013-2025/"
+    },
+    {
+      "sourcePath": "mantras/ekadasamukha-dharani.md",
+      "title": "Ekadasamukha Dharani",
+      "permalink": "/notes/mantras/ekadasamukha-dharani/"
+    }
+  ]
+}

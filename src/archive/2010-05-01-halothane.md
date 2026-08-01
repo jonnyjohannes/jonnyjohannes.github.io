@@ -1,9 +1,9 @@
 ---
-layout: project
+layout: layouts/archive-item.njk
 title: Halothane 
-short-description: Atomistic and molecular calculations 
+description: Atomistic and molecular calculations 
 thumb: halothane_1.jpg 
-permalink: projects/halothane
+permalink: /projects/halothane/
 published: true
 ---
 

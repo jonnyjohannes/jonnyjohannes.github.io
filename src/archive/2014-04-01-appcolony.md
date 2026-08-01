@@ -1,8 +1,8 @@
 ---
-layout: project
+layout: layouts/archive-item.njk
 title: AppColony
 thumb: appcolony.png
-permalink: projects/appcolony
+permalink: /projects/appcolony/
 published: true
 ---
 
