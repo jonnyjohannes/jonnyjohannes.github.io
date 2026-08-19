@@ -2,7 +2,9 @@
   "source": "j2",
   "files": [
     "hacking/dotfiles-reflections-2013-2025.md",
-    "mantras/ekadasamukha-dharani.md"
+    "hacking/dotfiles-reflections-2025-2026.md",
+    "mantras/ekadasamukha-dharani.md",
+    "mantras/heart_sutra.md"
   ],
   "notes": [
     {
@@ -11,9 +13,19 @@
       "permalink": "/notes/hacking/dotfiles-reflections-2013-2025/"
     },
     {
+      "sourcePath": "hacking/dotfiles-reflections-2025-2026.md",
+      "title": "Dotfiles Repository Evolution Timeline (Continuation: 2025-2026)",
+      "permalink": "/notes/hacking/dotfiles-reflections-2025-2026/"
+    },
+    {
       "sourcePath": "mantras/ekadasamukha-dharani.md",
       "title": "Ekadasamukha Dharani",
       "permalink": "/notes/mantras/ekadasamukha-dharani/"
+    },
+    {
+      "sourcePath": "mantras/heart_sutra.md",
+      "title": "Prajñāpāramitā Hṛdaya Sūtra — The Heart of Perfect Wisdom",
+      "permalink": "/notes/mantras/heart_sutra/"
     }
   ]
 }
