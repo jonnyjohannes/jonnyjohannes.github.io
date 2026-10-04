@@ -20,6 +20,14 @@ html {
   --white: white;
   --black: black;
   --gray: #85888C;
+  --constellation-1: #575279;
+  --constellation-2: #286983;
+  --constellation-3: #56949f;
+  --constellation-4: #907aa9;
+  --constellation-5: #b4637a;
+  --constellation-6: #d7827e;
+  --constellation-7: #ea9d34;
+  --constellation-8: #4a455d;
 
   --body-flex-direction: column;
   --header-flex-direction: row;
@@ -271,14 +279,56 @@ header#header .menu li {
 
 .listing h1, .note h1, .archive-item h1 { line-height: 1.2; }
 
+/* Notes use stable, file-seeded accents for headings and inline emphasis. */
+.note-content :is(h1, h2, h3, h4, h5, h6).constellation-1,
+.note-content .constellation-1 { color: var(--constellation-1); }
+.note-content :is(h1, h2, h3, h4, h5, h6).constellation-2,
+.note-content .constellation-2 { color: var(--constellation-2); }
+.note-content :is(h1, h2, h3, h4, h5, h6).constellation-3,
+.note-content .constellation-3 { color: var(--constellation-3); }
+.note-content :is(h1, h2, h3, h4, h5, h6).constellation-4,
+.note-content .constellation-4 { color: var(--constellation-4); }
+.note-content :is(h1, h2, h3, h4, h5, h6).constellation-5,
+.note-content .constellation-5 { color: var(--constellation-5); }
+.note-content :is(h1, h2, h3, h4, h5, h6).constellation-6,
+.note-content .constellation-6 { color: var(--constellation-6); }
+.note-content :is(h1, h2, h3, h4, h5, h6).constellation-7,
+.note-content .constellation-7 { color: var(--constellation-7); }
+.note-content :is(h1, h2, h3, h4, h5, h6).constellation-8,
+.note-content .constellation-8 { color: var(--constellation-8); }
+.note-content :is(code.constellation-1, code.constellation-2, code.constellation-3, code.constellation-4, code.constellation-5, code.constellation-6, code.constellation-7, code.constellation-8) {
+  background: color-mix(in srgb, currentColor 10%, transparent);
+  padding-inline: .18em;
+}
+
 .entry-list { list-style: none; padding: 0; }
 .entry-list li { border-top: 1px solid var(--gray); padding: 1rem 0; }
 .entry-list a { display: block; }
+.entry-list li:nth-child(8n + 1) > a { color: var(--constellation-1); }
+.entry-list li:nth-child(8n + 2) > a { color: var(--constellation-5); }
+.entry-list li:nth-child(8n + 3) > a { color: var(--constellation-3); }
+.entry-list li:nth-child(8n + 4) > a { color: var(--constellation-7); }
+.entry-list li:nth-child(8n + 5) > a { color: var(--constellation-2); }
+.entry-list li:nth-child(8n + 6) > a { color: var(--constellation-6); }
+.entry-list li:nth-child(8n + 7) > a { color: var(--constellation-4); }
+.entry-list li:nth-child(8n) > a { color: var(--constellation-8); }
 .entry-list span { display: block; color: var(--gray); font-size: .9em; }
 .date, .note-meta { color: var(--gray); }
 .note-meta { display: flex; flex-wrap: wrap; gap: 1rem; font-size: .9em; }
 .backlinks { border-top: 1px solid var(--gray); margin-top: 4rem; padding-top: 1rem; }
 
 @media (prefers-color-scheme: dark) {
-  :root { --white: #111; --black: #f5f5f5; --gray: #aaa; }
+  :root {
+    --white: #111;
+    --black: #f5f5f5;
+    --gray: #aaa;
+    --constellation-1: #c4a7e7;
+    --constellation-2: #9ccfd8;
+    --constellation-3: #31748f;
+    --constellation-4: #c4a7e7;
+    --constellation-5: #ebbcba;
+    --constellation-6: #eb6f92;
+    --constellation-7: #f6c177;
+    --constellation-8: #e0def4;
+  }
 }

@@ -11,6 +11,28 @@ function slugify(value) {
     .replace(/\s+/g, "-");
 }
 
+const spreadOrder = [1, 5, 3, 7, 2, 6, 4, 8];
+
+function addConstellation(tokens) {
+  let index = 0;
+  const nextClass = () => {
+    const slot = spreadOrder[index % spreadOrder.length];
+    index += 1;
+    return `constellation-${slot}`;
+  };
+
+  for (const token of tokens) {
+    if (token.type === "heading_open") token.attrJoin("class", nextClass());
+    if (token.type !== "inline" || !token.children) continue;
+
+    for (const child of token.children) {
+      if (child.type === "strong_open" || child.type === "em_open" || child.type === "code_inline") {
+        child.attrJoin("class", nextClass());
+      }
+    }
+  }
+}
+
 module.exports = function (eleventyConfig) {
   const markdown = markdownIt({ html: true, linkify: true, typographer: true, breaks: true })
     .use(footnote)
@@ -20,6 +42,7 @@ module.exports = function (eleventyConfig) {
       makeAllLinksAbsolute: true,
       generatePagePathFromLabel: slugify,
     }));
+  markdown.core.ruler.push("markdown_constellation", (state) => addConstellation(state.tokens));
 
   eleventyConfig.setLibrary("md", markdown);
   eleventyConfig.addPassthroughCopy("src/assets");
@@ -29,6 +52,18 @@ module.exports = function (eleventyConfig) {
       return content.replace(/(href=\"\/notes\/[a-z0-9-]+)(\")/g, "$1/$2");
     }
     return content;
+  });
+  eleventyConfig.addTransform("note-constellation-offset", (content, outputPath) => {
+    if (!outputPath || !outputPath.includes("/notes/") || !outputPath.endsWith(".html")) return content;
+    const stablePath = outputPath.slice(outputPath.lastIndexOf("/notes/") + 7);
+    let hash = 5381;
+    for (const character of stablePath) hash = (hash * 33 + character.charCodeAt(0)) % 2147483647;
+    const offset = hash % spreadOrder.length;
+    return content.replace(/constellation-(\d)/g, (_match, value) => {
+      const slot = Number(value);
+      const index = spreadOrder.indexOf(slot);
+      return `constellation-${spreadOrder[(index + offset) % spreadOrder.length]}`;
+    });
   });
 
   eleventyConfig.addFilter("formatTimestamp", (value) => {

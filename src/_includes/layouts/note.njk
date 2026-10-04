@@ -9,7 +9,9 @@ layout: layouts/base.njk
     {% if updated_at and updated_at != created_at %}<span>modified <time datetime="{{ updated_at }}">{{ updated_at | formatTimestamp }}</time></span>{% endif %}
   </p>
   {% endif %}
-  {{ content | safe }}
+  <div class="note-content">
+    {{ content | safe }}
+  </div>
   {% set related = title | backlinks(collections.notes) %}
   {% if related.length %}
   <aside class="backlinks">
