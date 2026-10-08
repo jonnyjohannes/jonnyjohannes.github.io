@@ -2,6 +2,7 @@ const fs = require("fs");
 const markdownIt = require("markdown-it");
 const footnote = require("markdown-it-footnote");
 const wikilinks = require("markdown-it-wikilinks");
+const { getResumeMarkdown } = require("./scripts/resume-content");
 
 function slugify(value) {
   return String(value)
@@ -45,6 +46,7 @@ module.exports = function (eleventyConfig) {
   markdown.core.ruler.push("markdown_constellation", (state) => addConstellation(state.tokens));
 
   eleventyConfig.setLibrary("md", markdown);
+  eleventyConfig.addFilter("resumeProposal", () => markdown.render(getResumeMarkdown()));
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addTransform("wikilink-slashes", (content, outputPath) => {

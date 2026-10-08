@@ -263,6 +263,31 @@ header#header .menu li {
 }
 
 
+.resume-page {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 6vmin 0;
+}
+
+.resume-page h1 { line-height: 1.15; }
+.resume-page h2 { margin-top: 2.5rem; }
+.resume-page h3 { margin-top: 1.6rem; }
+.resume-page li { margin-bottom: .35rem; }
+.resume-page .resume-download { margin-top: 3rem; }
+.resume-page .resume-download a {
+  display: inline-block;
+  border: 1px solid var(--gray);
+  border-radius: .25rem;
+  padding: .55rem .9rem;
+  color: var(--gray);
+  font-size: .9em;
+}
+
+.resume-page .resume-download a:hover {
+  border-color: var(--black);
+  color: var(--black);
+}
+
 .notes-promo {
   margin: 12vmin 0 5vmin;
   max-width: 42rem;

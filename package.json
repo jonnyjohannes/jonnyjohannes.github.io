@@ -7,8 +7,9 @@
     "sync:j2": "node scripts/sync-j2-notes.js",
     "refresh": "npm run sync:j2 && npm run build",
     "validate:notes": "node scripts/validate-notes.js",
-    "build": "npm run validate:notes && eleventy",
+    "build": "npm run validate:notes && eleventy && node scripts/build-resume.js",
     "dev": "eleventy --serve",
+    "build:resume": "node scripts/build-resume.js",
     "pull-notes": "npm run sync:j2"
   },
   "repository": {
@@ -29,6 +30,7 @@
     "gray-matter": "^4.0.3",
     "markdown-it": "^15.0.0",
     "markdown-it-footnote": "^4.0.0",
-    "markdown-it-wikilinks": "^1.4.0"
+    "markdown-it-wikilinks": "^1.4.0",
+    "playwright": "^1.64.0"
   }
 }

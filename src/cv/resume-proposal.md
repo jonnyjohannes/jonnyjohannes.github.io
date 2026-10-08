@@ -4,25 +4,22 @@ permalink: false
 
 # Jonny Johannes
 
-**Software engineer** · jonny@jonnyjohannes.com · jonnyjohannes.com · [GitHub](https://github.com/jonnyjohannes) · [LinkedIn](https://www.linkedin.com/in/jonnyjohannes/)
+**Software engineer** · jonnyjohannes.com · [GitHub](https://github.com/jonnyjohannes) · [LinkedIn](https://www.linkedin.com/in/jonnyjohannes/)
 
 Software engineer with a background in computational physics. Recent work spans advertising data systems, measurement, and decision-support tools.
 
 ## Experience
 
-<!-- Add any role after Wayfair here, with confirmed employer, title, dates, and 2–3 concrete contributions. If still at Wayfair, remove this note. -->
+### Wayfair — Software Engineer · Boston, MA · January 2019
 
-### Wayfair — Software Engineer · Boston, MA · January 2019 – [end date, or Present if still current]
-
-- Led a four-person team building product segmentation for paid advertising, providing product-level signals for Google Shopping ad decisions. [Confirm who used the signals and how.]
-- Mentored a junior engineer on conversion feedback systems that send Wayfair's attribution data to Google Ads, connecting internal measurement with campaign optimization. [Confirm your technical ownership and what changed.]
-- Used systematic analysis of image-performance data to guide an ambiguous product decision: paused plans for LLM-based “in-focus” tagging and prioritized measurement over untested assumptions. [Confirm whether “paused plans” accurately describes the decision and your role in it.]
-- Built software to schedule and evaluate budget and target-ROAS changes for a US paid-search portfolio spending roughly $1M per day on ads. [Confirm this spend figure is defensible and cleared for public use; clarify whether the software proposes changes or executes them live.]
+- Led a four-person team building product segmentation for paid advertising, providing product-level signals for Google Shopping ad decisions.
+- Mentored a junior engineer on conversion feedback systems that send Wayfair's attribution data to Google Ads, connecting internal measurement with campaign optimization.
+- Used systematic analysis of image-performance data to guide an ambiguous product decision: paused plans for LLM-based “in-focus” tagging and prioritized measurement over untested assumptions.
+- Built software to schedule and evaluate budget and target-ROAS changes for a US paid-search portfolio.
 
 ### AppColony — Software Developer · Calgary, AB · April 2014 – December 2018
 
 - Built back-end infrastructure for mobile and web clients and interactive web applications.
-- [Optional: replace with a specific product or technical decision and its outcome, if it strengthens the story.]
 
 ### Earlier engineering experience
 
@@ -41,15 +38,23 @@ Software engineer with a background in computational physics. Recent work spans 
 
 ---
 
-## Review notes — remove before producing a final resume
+## Notes for Jonny — resolve before approving the resume
 
-**This is a proposed edit, not a verified current resume.** The original transcription remains in `src/cv/resume.md`. The draft front matter (`permalink: false`) keeps this working file out of the Eleventy site; decide where the approved source should live before rendering.
+This is a working proposal; `src/cv/resume.md` remains the original transcription. `permalink: false` prevents a generated Eleventy page, not public access to repository source. The four Wayfair stories use public-facing vocabulary: product segmentation, conversion feedback, performance measurement, and budget/bidding controls. No internal application names are needed.
 
-- **Vocabulary for the four Wayfair stories:** product segmentation (what products to advertise); conversion feedback (what value returned from ads); performance visibility (what the data shows before deciding); budget and bidding controls (when and how to adjust spend/targets). Use these plain-English concepts in the resume, not internal application names or acronyms. Google Shopping, Google Ads, and target ROAS are recognizable external terms; confirm what can be shared publicly.
-- **Wayfair bullets are candidates, not approved claims.** Jonny prefers to frame the image work as methodical, systematic analysis rather than name box plots in the resume bullet. He confirmed that it contributed to pausing automated focus-tagging and prioritizing measurement before more tagging work. Marketers’ “clickbait” claims still need testing against observed image performance; do not claim those hypotheses were proved or disproved. He describes the search portfolio as roughly $1M/day in *actual ad spend*, not $1M/day saved, allocated personally, or changed by automation. Confirm the figure's basis/typicality and permission to disclose it publicly, along with current employer/title(s), dates, remaining bracketed details, and live automation status. “Seven-figure daily spend” still discloses the same order of magnitude; if the amount is restricted, quantify team size, throughput, campaign coverage, or another approved dimension instead. The local repository READMEs and plans support general system descriptions, not exact ownership or shipped business impact.
-- **Old work: recommend compressing, not erasing.** AppColony still demonstrates nearly five years of product engineering. StaffingExperts and Foodtree become one-line entries; if the new Wayfair or later experience fills the page, remove these first. Keep dates intact wherever roles remain.
-- **Research: keep one distinctive signal.** The M.Sc. work and peer-reviewed paper support the physicist framing. I cut the three other research positions, both unpublished thesis citations, and the 2006–2015 awards list from this *proposal*; all remain in `resume.md` if a research-heavy version is needed. If targeting pure software roles and space is tight, drop Selected research before cutting recent engineering detail.
-- **Technologies: add only a current, relevant selection if useful.** The old inventories mix production systems with editors, operating systems, and legacy tools; a short skills line can be added after confirming what you actually use now and what target roles ask for.
-- **Contact: no street address or phone in this draft.** The old PDF contains both. Confirm preferred email, site, GitHub/LinkedIn URLs, and whether to add a general location or phone. The linked profile URLs here are inferred from handles in the old resume and need checking.
-- **Targeting and length:** this version leans toward senior software/data-platform roles, not academic positions. Choose a target role before finalizing emphasis. No need to force one page; decide after current experience is filled in and rendered.
-- **Fact check before publishing:** confirm dates, titles, spellings, summary, research wording, and publication citation against your own records. In particular, do not let the old “Present” date or this draft's placeholders become published claims.
+### Facts to confirm or fill in
+
+- [ ] **Chronology:** Confirm the Wayfair end date or whether the role is current, any promotions/title dates, location, and any roles after Wayfair.
+- [ ] **Segmentation:** What did your four-person team deliver, who used the product signals, and what changed for Shopping advertising? The draft establishes leadership and use, not measured lift.
+- [ ] **Conversion feedback:** What did you personally build or own, what did the junior engineer own, and what improved? The draft establishes mentoring and purpose, not an optimization outcome.
+- [ ] **Image decision:** Does “paused plans for LLM-based ‘in-focus’ tagging” accurately describe the decision and your role in it? Was the measurement-first direction adopted by the team? Keep marketers’ clickbait ideas as *hypotheses to test* against image performance, not findings already proved or refuted. The resume should emphasize your analysis and judgment, not the box-plot format.
+- [ ] **Paid-search scale and status:** What portfolio scale can be stated publicly and defended? Does the software only schedule/evaluate recommendations, or does it execute live budget/tROAS changes? Do not add spend or campaign counts until confirmed.
+- [ ] **Target role and skills:** Is this aimed at senior software engineering, data/platform engineering, or another role? Which current technologies merit a *short* skills line? The old list includes tools no longer useful as resume signals.
+- [ ] **Contact:** Confirm the website and exact GitHub/LinkedIn URLs (profile links here were inferred from the old handles). Do you want a general location? Email, phone, and street address are omitted from this public draft.
+
+### Editorial choices
+
+- [ ] **Older industry roles:** Keep AppColony as one role and StaffingExperts/Foodtree as one-line entries (current proposal), or cut more once recent experience is complete? Supply an AppColony outcome only if it adds something distinct.
+- [ ] **Research:** Keep the M.Sc. research + peer-reviewed publication (current proposal), trim to education alone, or restore more research for research-oriented applications? Three other research positions, unpublished theses, and old awards remain in `src/cv/resume.md`; none is silently lost.
+
+After those choices, check dates/titles and the publication citation against your records; approve the final wording before moving it to `src/cv/resume.md` or starting the PDF design.
