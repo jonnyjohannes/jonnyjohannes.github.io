@@ -34,7 +34,7 @@ async function main() {
     await page.setContent(html, { waitUntil: "networkidle" });
     await page.pdf({
       path: path.join(outputDir, pdfName),
-      format: "A4",
+      format: "Letter",
       printBackground: true,
       preferCSSPageSize: true,
       displayHeaderFooter: false,
