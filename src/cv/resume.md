@@ -6,7 +6,7 @@ permalink: false
 
 [jonnyjohannes.com](https://jonnyjohannes.com) · [github.com/jonnyjohannes](https://github.com/jonnyjohannes) · [linkedin.com/in/jonnyjohannes](https://www.linkedin.com/in/jonnyjohannes/)
 
-Software engineer with 10+ years of industry experience and a background in computational physics. Experienced in leading teams and building data-intensive systems, with recent work spanning advertising decision systems, attribution feedback, measurement, and automation.
+Software engineer with 15 years of industry experience and a background in computational physics. Experienced in leading teams and building data-intensive systems, with recent work spanning advertising decision systems, attribution feedback, measurement, and automation.
 
 ## Experience
 
