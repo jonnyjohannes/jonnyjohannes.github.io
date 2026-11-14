@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
 
-const sourcePath = path.join(__dirname, "../src/cv/resume-proposal.md");
+const sourcePath = path.join(__dirname, "../src/cv/resume.md");
 
 function getResumeMarkdown() {
   const source = matter(fs.readFileSync(sourcePath, "utf8"));

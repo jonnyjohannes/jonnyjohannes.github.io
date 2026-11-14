@@ -46,7 +46,7 @@ module.exports = function (eleventyConfig) {
   markdown.core.ruler.push("markdown_constellation", (state) => addConstellation(state.tokens));
 
   eleventyConfig.setLibrary("md", markdown);
-  eleventyConfig.addFilter("resumeProposal", () => markdown.render(getResumeMarkdown()));
+  eleventyConfig.addFilter("resumeContent", () => markdown.render(getResumeMarkdown()));
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addTransform("wikilink-slashes", (content, outputPath) => {
