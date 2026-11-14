@@ -89,11 +89,16 @@
 
 **B.SC. PHYSICS, HONOURS BIOPHYSICS** · September 2006 - May 2010
 
-## Papers and Publications
+## Publications and theses
 
-- Johannes, J. Bridging the gap between the theoretical and empirical reorganization energy. Masters Thesis. 2016 (unpublished).
-- Subbotina, Y.; Johannes, J.; Lev, B.; Noskov, S. Halothane Solvation in Water and Methanol From Simulations with New Polarizable Potential Function. J. Phys. Chem. B. 2010 114 (19), 6401-6408.
-- Johannes, J. Characterization of the Electrical and Physical Properties of Gold-on-Glass and Gold-on-Silicon Micro Wires Under High Current Stresses. Undergraduate Thesis. 2010 (unpublished).
+### Peer-reviewed publication
+
+- Subbotina, J. O.; Johannes, J.; Lev, B.; Noskov, S. Yu. “Halothane Solvation in Water and Organic Solvents from Molecular Simulations with New Polarizable Potential Function.” *J. Phys. Chem. B* 2010, 114 (19), 6401–6408. https://doi.org/10.1021/jp908339j
+
+### Archived theses
+
+- Johannes, J. *Bridging the Gap Between the Theoretical and Empirical Reorganization Energy.* M.Sc. thesis, University of Calgary, 2016. Archived in the University of Calgary institutional repository.
+- Johannes, J. *Characterization of the Electrical and Physical Properties of Gold-on-Glass and Gold-on-Silicon Micro Wires Under High Current Stresses.* B.Sc. honours thesis, University of British Columbia, 2010. Archived in the University of British Columbia institutional repository.
 
 ## Honors & Awards
 

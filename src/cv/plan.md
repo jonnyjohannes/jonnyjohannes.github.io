@@ -3,12 +3,12 @@
 ## Current State
 
 - Status: rendering pipeline in progress; proposal draft is the current public render source
-- Verification: source transcription was checked against the existing PDF text; CI HTML/PDF generation is implemented but not yet run locally or visually reviewed
+- Verification: transcription was checked against the existing PDF; latest local HTML/PDF build passed and generated a one-page PDF after research was removed; visual review and CI execution remain pending
 - Owner: Jonny
 - Executor: Jonny
 - Last updated: 2026-10-04
 - Current focus: review the public-facing HTML and `jonnyjohannes-resume.pdf`; confirm remaining facts before replacing the proposal with approved copy
-- Next action: run `npm run build` locally, inspect `_site/cv/` output, then resolve remaining content questions
+- Next action: review the content ledger below; resolve the remaining role, awards, and contact questions, then inspect the current render
 - Branch / PR / session: `cv-update` worktree at `/Users/jj678a/src/j2/jonnyjohannes.github.io-cv-update`
 
 ## Abstract
@@ -24,7 +24,7 @@ proposal ──Eleventy/Markdown + shared CSS──▶ /cv/ HTML + PDF
 Jonny's review ──confirmed facts──▶ approved resume source replaces proposal
 ```
 
-The original Markdown transcription remains the content baseline. The current proposal is deliberately rendered for local review and published as a work in progress; editorial notes are excluded from the HTML/PDF. Jonny owns content decisions. The renderer must not silently rewrite or invent resume claims.
+The original Markdown transcription remains the content baseline. The current proposal contains only resume copy and is deliberately rendered for local review and published as a work in progress. Jonny owns content decisions. The renderer must not silently rewrite or invent resume claims.
 
 ## Plan Ledger
 
@@ -33,19 +33,19 @@ Status: `[ ]` not started, `[~]` in progress, `[x]` verified, `[!]` blocked.
 - [x] P1 — Transcribe the current PDF into Markdown without editorial changes
   - Deliverable: `src/cv/resume.md`
   - Verify: compare all text, sections, chronology, and dates with `src/assets/images/jonnyjohannes.pdf`
-  - Evidence: extracted the two-page PDF text with PDFKit and checked the Markdown transcription against it; formatting is represented with Markdown headings and bullets.
+  - Evidence: the original transcription was checked against the two-page PDF. Jonny later requested a bibliography correction in `resume.md`; the journal record now matches the publisher’s metadata, and the two theses are labeled as archived rather than unpublished.
 - [~] P2 — Critically review the baseline and update resume content with Jonny
-  - Deliverable: Jonny-approved content in `src/cv/resume.md`, preserving alignment with his LinkedIn profile and avoiding unsupported claims
+  - Deliverable: Jonny-approved current resume source, while preserving `src/cv/resume.md` as the faithful original transcription
   - Verify: review the final text with Jonny; confirm role titles, employers, dates, claims, and any selected profile details against source material
-  - Evidence: a shorter, unverified working draft and review notes are in `src/cv/resume-proposal.md`; approval is pending.
+  - Evidence: the working draft is in `src/cv/resume-proposal.md`; confirmed decisions and open questions are recorded in this plan; approval is pending.
 - [~] P3 — Build shared HTML and PDF rendering for the proposal
   - Deliverable: `/cv/` page using the site's Eleventy layout and `jonnyjohannes-resume.pdf` rendered from the same Markdown source
   - Verify: inspect browser and PDF output for readability, page breaks, links, and content fidelity
-  - Evidence: `scripts/build-resume.js`, `src/assets/css/resume.css`, and the Pages workflow are implemented; local render and visual review are pending.
+  - Evidence: `scripts/build-resume.js`, `src/assets/css/resume.css`, and the Pages workflow are implemented; local build passed and generated a one-page PDF after research was removed; visual review is pending.
 - [~] P4 — Make the renderer repeatable in CI
   - Deliverable: CI installs Chromium, builds the HTML/PDF, and publishes both through GitHub Pages
   - Verify: run `npm run build` from a clean checkout and confirm `_site/cv/jonnyjohannes-resume.pdf` exists
-  - Evidence: `npm run build` now invokes the renderer after Eleventy; local and CI execution are pending.
+  - Evidence: `npm run build` now invokes the renderer after Eleventy and passed locally; CI execution is pending.
 
 ## Desired Outcome
 
@@ -54,9 +54,9 @@ A current, accurate resume whose source content is easy to edit in Markdown and 
 ## Current Reality
 
 - The source is the two-page `src/assets/images/jonnyjohannes.pdf`; the source PDF was generated with LaTeX.
-- `src/cv/resume.md` is a faithful content transcription with Markdown structure, not a designed resume or a claim of current accuracy.
-- `src/cv/resume-proposal.md` is a shorter working draft with a focused checklist of unresolved facts and editorial choices. It is not approved content. A custom build step renders only its resume content (not editorial notes) to `/cv/` and `jonnyjohannes-resume.pdf` for public review.
-- The original PDF's Wayfair chronology needs Jonny's confirmation; the proposal currently includes only the start month and year.
+- `src/cv/resume.md` preserves the original resume transcription, with a later corrected citation section: one peer-reviewed journal article and two institutionally archived theses.
+- `src/cv/resume-proposal.md` is a working resume-only draft; it is not approved content. Confirmed decisions and remaining questions are recorded in the Content Review section below. The build publishes it to `/cv/` and `jonnyjohannes-resume.pdf` for public review.
+- Jonny confirmed he is still a Software Engineer at Wayfair in Boston; the proposal now says `January 2019 – Present`. Whether there are other roles to include remains open.
 - The PDF includes detailed older software and research roles, education, a publication and thesis entries, and awards. Their relevance and level of detail need review rather than automatic deletion.
 - Jonny's public LinkedIn About supports the existing physicist / software-engineer framing. The public page fetch did not expose the role details reliably enough to validate all titles, dates, or descriptions. Keep the resume aligned with LinkedIn where details can be confirmed; ask Jonny rather than infer.
 - Jonny prefers Markdown as an editable source and values a minimal, pleasing aesthetic. Some creativity is welcome, but the result should remain recognizably resume-like and fit a PDF.
@@ -83,11 +83,36 @@ A current, accurate resume whose source content is easy to edit in Markdown and 
 ## Decisions
 
 - **Content approval remains separate from rendering** — the proposal can be rendered for review, but remains a draft until Jonny approves its facts and copy.
-- **Markdown is the content source; HTML/CSS is the shared renderer** — Playwright/Chromium produces the published PDF from the same HTML/CSS as the browser page.
+- **Markdown is the shared content source** — Eleventy renders it in the site layout; Playwright/Chromium prints the same content with print-specific HTML/CSS.
 - **Minimal, conventional resume structure with restrained personality** — prioritize typography, hierarchy, spacing, and legibility over decorative graphics or layout tricks.
 - **Keep claims grounded and LinkedIn-consistent** — LinkedIn is a reference for alignment, but its public profile extraction did not provide enough detail to resolve every role.
 - **No arbitrary one-page constraint** — a clear multi-page result is preferable to cramped typesetting if the content warrants it.
-- The public proposal omits direct email and unconfirmed paid-search scale; editorial notes are not included in generated output.
+- The public proposal omits direct email and unconfirmed paid-search scale; the Markdown proposal contains only resume copy.
+
+## Content Review
+
+Confirmed resume decisions and facts live here so the proposal file contains only resume copy.
+
+### Confirmed
+
+- [x] **Wayfair chronology:** Software Engineer in Boston, January 2019–Present; no title or location changes.
+- [x] **Product segmentation:** Led a four-person team building product-level segment labels used as campaign inputs across multiple advertising platforms. Keep provider names out; no measured outcome is claimed.
+- [x] **Conversion feedback:** Designed and implemented the integration and mentored a junior engineer. The resume describes the system and Jonny’s role, not a measured optimization outcome.
+- [x] **Image-performance analysis:** Jonny’s analysis helped the team pause LLM-based “in-focus” tagging and prioritize measurement. Treat “clickbait” ideas as hypotheses, not established findings.
+- [x] **Budget and bidding automation:** Software automatically executes scheduled budget and target-ROAS changes in production. Do not include unconfirmed spend or campaign counts.
+- [x] **Targeting:** Broad software-engineering resume, leaning senior; omit a skills line for now.
+- [x] **Community leadership:** Code for Boston volunteer project lead, January 2026–Present. Leads CutePetsBoston, which raises awareness of Greater Boston adoptable pets through automated social outreach; scope includes pet sourcing, multi-platform publishing, redirects, and engagement analytics. No reach or adoption metrics claimed.
+- [x] **Older engineering roles:** Keep AppColony brief and StaffingExperts/Foodtree to one-line entries.
+- [x] **Research:** Omit research experience and papers/theses from the current broad, senior-leaning software resume. Preserve the research record in `src/cv/resume.md` for research- or physics-oriented roles. Its bibliography distinguishes the peer-reviewed article from the two archived theses; the article citation follows the publisher record.
+- [x] **Chic Geek:** Omit. Public LinkedIn lists mentorship roles in 2017 and 2018; Jonny confirms these were not project-lead roles and prefers to leave them out.
+- [x] **Privacy:** Omit direct email, phone, street address, and unconfirmed paid-search scale from the public draft.
+
+### Still open
+
+- [ ] Confirm whether there are additional current or post-Wayfair roles to include.
+- [ ] Confirm exact website and GitHub/LinkedIn URLs.
+- [ ] Decide whether any items from the original Honors & Awards list are worth restoring.
+- [ ] Visually review the latest one-page render and confirm its length and page balance.
 
 ## Detailed Plan
 
@@ -97,13 +122,13 @@ A current, accurate resume whose source content is easy to edit in Markdown and 
 
 ### 2. Critical content review with Jonny
 
-Review `src/cv/resume-proposal.md` against the transcription with Jonny. Start with the Wayfair role and any subsequent roles: identify accurate, specific work to add and confirm titles and date ranges. Decide whether the proposed compression of early engineering and research roles fits the target audience. Reconcile facts and contact links with LinkedIn where visible and ask Jonny to supply missing details. Preserve terse bullets and do not invent results or metrics. Record the approved copy in `src/cv/resume.md`; remove editorial notes and unresolved placeholders before handing off design.
+Review `src/cv/resume-proposal.md` against the transcription with Jonny and use the Content Review ledger below as the decision record. Keep terse bullets and do not invent results or metrics. The full original research record remains in `src/cv/resume.md` for targeted variants. Keep `src/cv/resume.md` as the faithful original; choose a separate approved-source path before treating the current resume as final.
 
 ### 3. Shared HTML and PDF rendering
 
 The initial renderer is implemented before approval to enable local review. Keep it minimal and legible: typographic hierarchy, balanced whitespace, readable dates, and careful page breaks. Avoid flourishes that hurt scanning, printing, accessibility, or text extraction. Keep content substantively unchanged unless Jonny reopens content review.
 
-The Markdown source is rendered into `/cv/` through the shared Eleventy layout and site stylesheet. Playwright/Chromium renders the same Markdown as a print-oriented PDF. The public outputs are `/cv/` and `/cv/jonnyjohannes-resume.pdf`; editorial notes are excluded.
+The Markdown source is rendered into `/cv/` through the shared Eleventy layout and site stylesheet. Playwright/Chromium renders the same Markdown as a print-oriented PDF. The public outputs are `/cv/` and `/cv/jonnyjohannes-resume.pdf`.
 
 ### 4. Review and verify
 
@@ -124,14 +149,13 @@ Review the PDF at normal screen size and print scale. Check page count and balan
 
 ### Not verified / external pending
 
-- Jonny reports that image-performance analysis helped pause automated LLM focus-tagging and prioritize measurement; clickbait claims still need testing. Paid-search scale and live automation status remain unconfirmed and are excluded from the public proposal render.
-- LinkedIn's public extraction did not expose complete employment details.
+- Jonny reports that image-performance analysis helped pause automated LLM focus-tagging and prioritize measurement; clickbait claims still need testing. The budget/target-ROAS system executes scheduled changes in production; paid-search scale remains excluded from the public proposal render.
+- LinkedIn's public extraction did not expose complete employment details. Code for Boston project details were checked against the local CutePetsBoston repository; Jonny confirms project leadership. Resolved content facts and decisions are in the Content Review ledger below.
 - CI's Chromium-based renderer is implemented and has passed a local build; visual review is still pending.
 
 ## Open Questions
 
-- What has changed in Jonny's Wayfair scope, title, and work since the existing PDF, and which accomplishments can be stated concretely?
-- Which older roles, research details, awards, or academic material should remain prominent versus be compressed?
-- Should the approved Markdown content remain in the proposal file or move to `src/cv/resume.md`?
-- Should the final resume stay at two pages, or does the approved content naturally support a different length?
-- Which contact details should appear in the approved public PDF? Direct email and phone remain omitted from the proposal render.
+- Are there any additional current or post-Wayfair roles to include?
+- Should the original Honors & Awards list remain omitted, or are any awards worth restoring for the senior software-engineering target?
+- Confirm the website and profile URLs; direct email, phone, and street address remain omitted from the public draft.
+- The latest build is one page; inspect page balance and decide whether that length still works after the content review.
