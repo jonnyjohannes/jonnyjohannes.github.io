@@ -282,6 +282,14 @@ header#header .menu li {
 .resume-page h2:nth-of-type(2) { color: var(--constellation-5); }
 .resume-page h2:nth-of-type(3) { color: var(--constellation-7); }
 .resume-page h3 { margin-top: 1.6rem; }
+.resume-page :is(p, li):nth-of-type(8n + 1) :is(strong, em) { color: var(--constellation-1); }
+.resume-page :is(p, li):nth-of-type(8n + 2) :is(strong, em) { color: var(--constellation-2); }
+.resume-page :is(p, li):nth-of-type(8n + 3) :is(strong, em) { color: var(--constellation-3); }
+.resume-page :is(p, li):nth-of-type(8n + 4) :is(strong, em) { color: var(--constellation-4); }
+.resume-page :is(p, li):nth-of-type(8n + 5) :is(strong, em) { color: var(--constellation-5); }
+.resume-page :is(p, li):nth-of-type(8n + 6) :is(strong, em) { color: var(--constellation-6); }
+.resume-page :is(p, li):nth-of-type(8n + 7) :is(strong, em) { color: var(--constellation-7); }
+.resume-page :is(p, li):nth-of-type(8n) :is(strong, em) { color: var(--constellation-8); }
 .resume-page h1 + p a:nth-of-type(3n + 1) { color: var(--constellation-3); }
 .resume-page h1 + p a:nth-of-type(3n + 2) { color: var(--constellation-5); }
 .resume-page h1 + p a:nth-of-type(3n) { color: var(--constellation-7); }
