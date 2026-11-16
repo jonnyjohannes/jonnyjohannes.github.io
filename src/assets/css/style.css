@@ -269,9 +269,22 @@ header#header .menu li {
   padding: 6vmin 0;
 }
 
-.resume-page h1 { line-height: 1.15; }
-.resume-page h2 { margin-top: 2.5rem; }
+.resume-page h1 {
+  line-height: 1.15;
+  color: var(--constellation-1);
+}
+.resume-page h2 {
+  margin-top: 2.5rem;
+  padding-bottom: .25rem;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 35%, transparent);
+}
+.resume-page h2:nth-of-type(1) { color: var(--constellation-2); }
+.resume-page h2:nth-of-type(2) { color: var(--constellation-5); }
+.resume-page h2:nth-of-type(3) { color: var(--constellation-7); }
 .resume-page h3 { margin-top: 1.6rem; }
+.resume-page h1 + p a:nth-of-type(3n + 1) { color: var(--constellation-3); }
+.resume-page h1 + p a:nth-of-type(3n + 2) { color: var(--constellation-5); }
+.resume-page h1 + p a:nth-of-type(3n) { color: var(--constellation-7); }
 .resume-page li { margin-bottom: .35rem; }
 .resume-page .resume-download { margin-top: 3rem; }
 .resume-page .resume-download a {
@@ -279,13 +292,13 @@ header#header .menu li {
   border: 1px solid var(--gray);
   border-radius: .25rem;
   padding: .55rem .9rem;
-  color: var(--gray);
+  color: var(--constellation-1);
   font-size: .9em;
 }
 
 .resume-page .resume-download a:hover {
-  border-color: var(--black);
-  color: var(--black);
+  border-color: var(--constellation-5);
+  color: var(--constellation-5);
 }
 
 .notes-promo {
