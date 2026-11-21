@@ -363,6 +363,34 @@ header#header .menu li {
 .note-meta { display: flex; flex-wrap: wrap; gap: 1rem; font-size: .9em; }
 .backlinks { border-top: 1px solid var(--gray); margin-top: 4rem; padding-top: 1rem; }
 
+.dorothy-showcase {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: max(7vmin, 4rem) 0 5vmin;
+}
+.dorothy-title { font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.15; margin: 0 0 .5rem; color: var(--constellation-1); }
+.dorothy-intro { max-width: 45rem; }
+.dorothy-gallery { display: grid; grid-template-columns: 1fr; gap: 2.5rem; margin: 3rem 0 5rem; }
+.dorothy-gallery figure { margin: 0; padding-left: 1rem; border-left: 3px solid var(--constellation-1); }
+.dorothy-gallery figure:nth-child(3n + 2) { border-color: var(--constellation-3); }
+.dorothy-gallery figure:nth-child(3n) { border-color: var(--constellation-5); }
+.dorothy-gallery img { display: block; width: 100%; height: auto; border: 1px solid color-mix(in srgb, currentColor 20%, transparent); }
+.dorothy-gallery figcaption { padding-top: .75rem; font-size: .92rem; line-height: 1.6; }
+.dorothy-gallery figure:nth-child(3n + 1) figcaption strong { color: var(--constellation-1); }
+.dorothy-gallery figure:nth-child(3n + 2) figcaption strong { color: var(--constellation-3); }
+.dorothy-gallery figure:nth-child(3n) figcaption strong { color: var(--constellation-5); }
+.dorothy-copy { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+.dorothy-copy h2 { font-size: 1.2rem; color: var(--constellation-2); }
+.dorothy-copy > div:nth-child(3n + 2) h2 { color: var(--constellation-4); }
+.dorothy-copy > div:nth-child(3n) h2 { color: var(--constellation-6); }
+.dorothy-copy p { margin-top: .4rem; }
+.dorothy-note { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--gray); color: var(--gray); font-size: .9rem; }
+
+@media (max-width: 700px) {
+  .dorothy-showcase { padding-top: 5rem; }
+  .dorothy-gallery { gap: 1.5rem; }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --white: #111;
